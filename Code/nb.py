@@ -2,15 +2,16 @@ import json
 import math
 
 tokens = '../Data/tokenized_data.json'
-
 f = open(tokens,'r')
 data = json.load(f)
+intermediate = json.load(open('../Data/intermediate/intermediate0.json','r'))
 
 #generate count - dictionary of dictionaries. count[word][tag] stores the count of entries with word and tag in the corpus
 testrows = []
 exptags = []
 alltags = []
-
+actual_title = []
+qid = []
 count = {}
 entry = 0
 for row in data:
@@ -25,6 +26,11 @@ for row in data:
     else:
         break
 
+for row in data:
+    for inter_row in intermediate:
+        if row["id"] == inter_row["id"]:
+            actual_title.append(inter_row["title"])
+            qid.append(inter_row["id"])
 #data = data[1500:]
 # uncomment above for full run
 # comment below line for full run
@@ -99,6 +105,7 @@ def predict(doc):
     #get key with max value in dictionary
     predictedTags = sorted(e, key=e.__getitem__)
     print "Predicted Tags", (predictedTags[-3:])
+    print "--------------------------------------------"
     return predictedTags[-3:]
 
 TP = 0
@@ -106,6 +113,9 @@ FN = 0
 FP = 0
 TN = 0
 for i in range(len(testrows)):
+    print "--------------------------------------------"
+    print "Question ID: ", (qid[i])
+    print "Title: ", (actual_title[i])
     print "Expected Tags", (exptags[i])
     acttags = predict(testrows[i])
     [tp, fn, fp, tn] = perf(set(exptags[i]), set(acttags))
