@@ -1,10 +1,12 @@
 import json
 import math
+import MySQLdb
 
 tokens = '../Data/tokenized_data.json'
 f = open(tokens,'r')
 data = json.load(f)
 intermediate = json.load(open('../Data/intermediate/intermediate0.json','r'))
+mydb = MySQLdb.connect(host='localhost', user='root', passwd='1234', db='tagpredict_db')
 
 #generate count - dictionary of dictionaries. count[word][tag] stores the count of entries with word and tag in the corpus
 testrows = []
@@ -14,11 +16,13 @@ actual_title = []
 qid = []
 count = {}
 entry = 0
+output = []
+counter = 0
 for row in data:
     #if entry < 1500:
     # uncomment above for full run
     # comment below line for full run
-    if entry < 1525:
+    if entry < 50:
         testrows.append(row["title"])
         exptags.append(row["tags"])
         entry += 1
@@ -115,9 +119,15 @@ TN = 0
 for i in range(len(testrows)):
     print "--------------------------------------------"
     print "Question ID: ", (qid[i])
+    output.append({})
+    output[counter].update({'id':qid[i]})
     print "Title: ", (actual_title[i])
+    output[counter].update({'title':actual_title[i]})
     print "Expected Tags", (exptags[i])
+    output[counter].update({'expected': exptags[i]})
     acttags = predict(testrows[i])
+    output[counter].update({'predicted': acttags})
+    counter += 1
     [tp, fn, fp, tn] = perf(set(exptags[i]), set(acttags))
     TP += tp
     FN += fn
@@ -141,6 +151,18 @@ print "Accuracy:", "\t", 1.0*(TP+TN)/(TP+FP+FN+TN)
 print "Error:\t", 1.0*(FP+FN)/(TP+FP+FN+TN)
 print "Recall:","\t",  1.0*TP/(TP+FN)
 print "Precision:","\t",  1.0*TP/(TP+FP)
-print "Specificity:","\t",  1.0*TN/(TN+FP)
-print "F1 score:", "\t", f1_score
-print
+
+cursor = mydb.cursor()
+cursor.execute('DELETE FROM predictedtags')
+print 'TABLE DATA DELETED'
+for row in output:
+    exp = ' '.join(row['expected']).encode('utf-8')
+    pred = ' '.join(row['predicted']).encode('utf-8')
+    ttl = ''.join(row['title']).encode('utf-8')
+    cursor.execute("""INSERT INTO predictedtags (id, title, expected, predicted ) VALUES(%s, %s, %s, %s)""", (row['id'], ttl, exp, pred))
+    exp = ""
+    pred = ""
+    ttl = ""
+mydb.commit()
+cursor.close()
+print "Written to Database"

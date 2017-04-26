@@ -1,6 +1,6 @@
 
 echo Create Tokenized files
-python parse_csv.py
+python parse_token.py
 echo Collect Top Tags
 python getlabels.py
 echo Collect 500 samples for top 10 tags

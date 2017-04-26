@@ -5,7 +5,7 @@
 ##############################
 echo "Create Tokenized files"
 echo "-----------------------"
-python parse_csv.py
+python parse_token.py
 echo " "
 #
 #

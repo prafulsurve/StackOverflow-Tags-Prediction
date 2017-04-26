@@ -7,7 +7,7 @@ filepath = "../Data/tokenized/"
 
 #output file
 lpath = "../Data/all_labels.json"
-max_index = 10
+max_index = 50
 
 fw = open(lpath,'w')
 labels = dict()

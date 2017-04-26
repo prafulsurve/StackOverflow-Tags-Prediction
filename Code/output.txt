@@ -1,0 +1,357 @@
+--------------------------------------------
+Question ID:  3
+Title:  what are the benefits of the two permutation tables in des?
+Expected Tags [u'block-cipher', u'des', u'permutation']
+Predicted Tags [u'hash', u'encryption', u'des']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  7
+Title:  why use a 1-2 oblivious transfer instead of a 1 out of n oblivious transfer?
+Expected Tags [u'sha-1', u'hash']
+Predicted Tags [u'hash', u'public-key', u'rsa']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  8
+Title:  why do we append the length of the message in sha-1 pre-processing?
+Expected Tags [u'hash', u'cryptanalysis', u'preimage-resistance']
+Predicted Tags [u'block-cipher', u'collision-resistance', u'hash']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  9
+Title:  what is the general justification for the hardness of finding preimages for cryptographic hash functions?
+Expected Tags [u'encryption', u'rsa', u'public-key']
+Predicted Tags [u'rsa', u'public-key', u'encryption']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  14
+Title:  how can i use asymmetric encryption, such as rsa, to encrypt an arbitrary length of plaintext?
+Expected Tags [u'des', u'encryption', u's-boxes']
+Predicted Tags [u'aes', u'block-cipher', u'encryption']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  16
+Title:  how were the des s-box values determined?
+Expected Tags [u'dsa', u'bitcoin', u'digital-cash', u'ripemd']
+Predicted Tags [u'authentication', u'hash', u'encryption']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  17
+Title:  how to provide secure "vanity" bitcoin address service?
+Expected Tags [u'hash', u'implementation', u'salt']
+Predicted Tags [u'public-key', u'protocol-design', u'hash']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  18
+Title:  how can a random salt for a hash function work in practice?
+Expected Tags [u'encryption', u'aes', u'block-cipher', u'key-size']
+Predicted Tags [u'block-cipher', u'aes', u'encryption']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  20
+Title:  what are the practical differences between 256-bit, 192-bit, and 128-bit aes encryption?
+Expected Tags [u'hash', u'passwords']
+Predicted Tags [u'collision-resistance', u'passwords', u'hash']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  24
+Title:  what makes a hash function good for password hashing?
+Expected Tags [u'cryptanalysis', u'block-cipher', u'differential-analysis']
+Predicted Tags [u'cryptanalysis', u'encryption', u'block-cipher']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  27
+Title:  how do i apply differential cryptanalysis to a block cipher?
+Expected Tags [u'coding-theory', u'elliptic-curves', u'hermitian-curves']
+Predicted Tags [u'cryptanalysis', u'coding-theory', u'elliptic-curves']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  31
+Title:  current mathematics theory used in cryptography/coding theory
+Expected Tags [u'encryption', u'tls', u'public-key', u'keys']
+Predicted Tags [u'keys', u'tls', u'encryption']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  32
+Title:  how can ssl secure a two-way communication with only one key-pair?
+Expected Tags [u'hash', u'salt', u'randomness']
+Predicted Tags [u'rsa', u'randomness', u'hash']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  34
+Title:  necessity of randomness of salts?
+Expected Tags [u'cryptanalysis', u'classical-cipher', u'substitution-cipher', u'playfair']
+Predicted Tags [u'encryption', u'classical-cipher', u'cryptanalysis']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  36
+Title:  what are the main weaknesses of a playfair cipher, if any?
+Expected Tags [u'encryption', u'salt', u'database']
+Predicted Tags [u'cryptanalysis', u'hash', u'encryption']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  43
+Title:  salting when encrypting?
+Expected Tags [u'xor', u'stream-cipher']
+Predicted Tags [u'protocol-design', u'xor', u'stream-cipher']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  47
+Title:  with sufficient randomness, is xor an acceptable mechanism for encrypting?
+Expected Tags [u'encryption', u'hash', u'block-cipher', u'stream-cipher']
+Predicted Tags [u'encryption', u'block-cipher', u'hash']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  48
+Title:  is it feasible to build a stream cipher from a cryptographic hash function?
+Expected Tags [u'implementation', u'aes', u'side-channel-attack', u'timing-attack']
+Predicted Tags [u'side-channel-attack', u'implementation', u'aes']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  55
+Title:  known methods for constant time (table-free) aes implementation using 'standard' operations?
+Expected Tags [u'cryptanalysis', u'one-time-pad', u'key-reuse']
+Predicted Tags [u'public-key', u'encryption', u'cryptanalysis']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  59
+Title:  taking advantage of one-time pad key reuse?
+Expected Tags [u'encryption', u'des', u'modes-of-operation', u'cbc']
+Predicted Tags [u'modes-of-operation', u'cbc', u'encryption']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  66
+Title:  what are the details of the des weakness of reusing the same iv in cbc mode with the same key?
+Expected Tags [u'public-key', u'protocol-design', u'tls']
+Predicted Tags [u'public-key', u'protocol-design', u'tls']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  70
+Title:  protocol to generate client certificates at the start of a ssl session automatically?
+Expected Tags [u'rsa', u'number-theory', u'prime-numbers']
+Predicted Tags [u'prime-numbers', u'number-theory', u'rsa']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  71
+Title:  how can i generate large prime numbers for rsa?
+Expected Tags [u'des']
+Predicted Tags [u'cryptanalysis', u'encryption', u'des']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  72
+Title:  should des be avoided when developing new systems?
+Expected Tags [u'authentication']
+Predicted Tags [u'cryptanalysis', u'encryption', u'authentication']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  89
+Title:  advances in usability for cryptography/authentication
+Expected Tags [u'encryption', u'aes', u's-boxes', u'permutation', u'block-cipher']
+Predicted Tags [u'encryption', u'block-cipher', u'aes']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  98
+Title:  replacing the rijndael s-box?
+Expected Tags [u'cryptanalysis', u'public-key', u'rsa']
+Predicted Tags [u'cryptanalysis', u'public-key', u'rsa']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  109
+Title:  rsa with small exponents?
+Expected Tags [u'hash', u'passwords', u'protocol-design']
+Predicted Tags [u'protocol-design', u'passwords', u'hash']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  116
+Title:  is using slow password hashing on the client side easier attackable than on the server side?
+Expected Tags [u'cryptanalysis', u'algebraic-attack']
+Predicted Tags [u'encryption', u'algebraic-attack', u'cryptanalysis']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  123
+Title:  are there any tools for expressing the cipher operations as a system of equations?
+Expected Tags [u'encryption', u'resources', u'test-vectors']
+Predicted Tags [u'hash', u'test-vectors', u'encryption']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  128
+Title:  sites to find crypto intermediate values
+Expected Tags [u'random-number-generator', u'statistical-test']
+Predicted Tags [u'dsa', u'statistical-test', u'random-number-generator']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  129
+Title:  why did nist remove the lempel-ziv compression test from the statistical test suite?
+Expected Tags [u'public-key', u'post-quantum-cryptography', u'mceliece']
+Predicted Tags [u'rsa', u'post-quantum-cryptography', u'public-key']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  131
+Title:  is key size the only barrier to the adoption of the mceliece cryptosystem, or is it considered broken/potentially vulnerable?
+Expected Tags [u'hash', u'passwords', u'keys', u'key-derivation']
+Predicted Tags [u'keys', u'passwords', u'hash']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  135
+Title:  why does pbkdf2 xor the iterations of the hash function together?
+Expected Tags [u'encryption']
+Predicted Tags [u'public-key', u'cryptanalysis', u'encryption']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  136
+Title:  is it possible to derive the encryption method from encrypted text?
+Expected Tags [u'hash', u'bcrypt', u'blowfish']
+Predicted Tags [u'blowfish', u'collision-resistance', u'hash']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  142
+Title:  can one efficiently iterate valid bcrypt hash output values?
+Expected Tags [u'aes', u'block-cipher']
+Predicted Tags [u'block-cipher', u'aes', u'encryption']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  143
+Title:  encrypted text length in aes
+Expected Tags [u'encryption', u'signature']
+Predicted Tags [u'signature', u'public-key', u'encryption']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  148
+Title:  reduction from signatures to encryption?
+Expected Tags [u'algebraic-attack']
+Predicted Tags [u'hash', u'encryption', u'algebraic-attack']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  153
+Title:  why is there an enormous difference between sat solvers?
+Expected Tags [u'encryption', u'rsa', u'public-key']
+Predicted Tags [u'encryption', u'rsa', u'public-key']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  160
+Title:  is it possible to create an asymmetric cryptosystem where the private keys are not easily verifiable as such?
+Expected Tags [u'hash', u'sha-256', u'entropy']
+Predicted Tags [u'sha-256', u'cryptanalysis', u'hash']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  161
+Title:  should i use the first or last bits from a sha-256 hash?
+Expected Tags [u'cryptanalysis', u'statistical-test', u'entropy']
+Predicted Tags [u'statistical-test', u'entropy', u'cryptanalysis']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  183
+Title:  tactics available to help prove security of a new system?
+Expected Tags [u'public-key', u'discrete-logarithm', u'factorization']
+Predicted Tags [u'factorization', u'public-key', u'discrete-logarithm']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  191
+Title:  are there asymmetric cryptographic algorithms that are not based on integer factorization and discrete logarithm?
+Expected Tags [u'encryption', u'protocol-design', u'mac', u'authenticated-encryption']
+Predicted Tags [u'mac', u'protocol-design', u'encryption']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  202
+Title:  should we mac-then-encrypt or encrypt-then-mac?
+Expected Tags [u'rsa', u'public-key', u'elliptic-curves', u'elgamal-encryption', u'distinguisher']
+Predicted Tags [u'elliptic-curves', u'public-key', u'rsa']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  204
+Title:  are any of the major asymmetric ciphers distinguishable (eg, rsa, ecc)?
+Expected Tags [u'encryption', u'block-cipher', u'modes-of-operation', u'cbc', u'ecb']
+Predicted Tags [u'cbc', u'block-cipher', u'encryption']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  225
+Title:  should i use ecb or cbc encryption mode for my block cipher?
+Expected Tags [u'number-theory', u'discrete-logarithm', u'finite-field']
+Predicted Tags [u'public-key', u'number-theory', u'discrete-logarithm']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  228
+Title:  how robust is discrete logarithm in $gf(2^n)$?
+Expected Tags [u'hash', u'collision-resistance', u'md5']
+Predicted Tags [u'md5', u'collision-resistance', u'hash']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  231
+Title:  change in probability of collision when removing digits from md5 hexadecimal hash values
+Expected Tags [u'implementation', u'white-box']
+Predicted Tags [u'public-key', u'cryptanalysis', u'implementation']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  241
+Title:  what is a white-box implementation of a cryptographic algorithm?
+Expected Tags [u'elliptic-curves', u'discrete-logarithm', u'dsa', u'number-theory']
+Predicted Tags [u'dsa', u'number-theory', u'discrete-logarithm']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  243
+Title:  are there security issues with discrete logarithm keys not being uniformly distributed?
+Expected Tags [u'feistel-network', u'provable-security']
+Predicted Tags [u'encryption', u'hash', u'provable-security']
+--------------------------------------------
+
+--------------------------------------------
+Question ID:  245
+Title:  does unbalancing a feistel cipher always improve security? does it improve security at all?
+Expected Tags [u'mac']
+Predicted Tags [u'hash', u'cryptanalysis', u'mac']
+--------------------------------------------
+
+Performance summary
+Accuracy: 	0.987194244604
+Error:	0.0128057553957
+Recall: 	0.693333333333
+Precision: 	0.707482993197
+TABLE DATA DELETED
+Written to Database

@@ -21,7 +21,6 @@ def split_by_label(data):
     for row in data:
         for label in top10.keys():
             if (top10[label]<max_lines):
-                total += top10[label]
                 if label in row["tags"]:
                     feed.append(row)
                     top10[label] = top10[label] + 1
